@@ -1,0 +1,29 @@
+version: '3'
+
+services:
+    mongodb:
+        image: mongo
+        ports:
+          - '27017:27017'
+        volumes: 
+          - ./data:/data/db
+        networks: 
+          - epsilon-compose-network                
+    api:
+        build: ./services/api
+        depends_on:
+          - mongodb
+        ports:
+          - "3010:3010"
+        command: "npm run dev"
+        volumes:
+          - type: bind
+            source: ./services/api
+            target: /app
+        working_dir: /app
+        networks: 
+          - epsilon-compose-network
+
+networks:
+  epsilon-compose-network:
+    driver: bridge
