@@ -5,7 +5,7 @@ export const theme = {
   space: [0, 4, 8, 10, 15, 20, 25, 30, 40, 56],
   fontSizes: [10, 13, 15, 19, 21, 30, 45],
   fontWeights: [100, 200, 300, 400, 500, 600, 700, 800, 900],
-  fontFamily: ["'Lato', sans-serif", "'Poppins', sans-serif"],
+  fontFamily: ["'Public Sans', sans-serif", "'Poppins', sans-serif"],
   lineHeights: {
     solid: 1,
     title: 1.25,

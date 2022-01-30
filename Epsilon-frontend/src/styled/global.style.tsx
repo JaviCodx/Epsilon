@@ -1,13 +1,16 @@
 import styled, { createGlobalStyle } from 'styled-components';
 import { themeGet } from '@styled-system/theme-get';
 
-const TIMEOUT = 400;
 
 
 export const GlobalStyle = createGlobalStyle`
 
 html {
     box-sizing: border-box;
+    font-family: ${themeGet('fontFamily.1', 'sans-serif')};
+    height: 100vh;
+    background-color:gray;
+
   }
 
   *, *:before, *:after {
