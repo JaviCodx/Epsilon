@@ -6,7 +6,7 @@ function App() {
 
   return (
     <div className="App">
-      Epsilon App
+      Epsilon App 🖥 🔥
     </div>
   )
 }
