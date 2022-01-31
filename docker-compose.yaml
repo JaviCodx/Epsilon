@@ -15,7 +15,10 @@ services:
           - mongodb
         ports:
           - "3010:3010"
+        environment: 
+          - MONGO_URI=mongodb://mongodb:27017
         command: "npm run dev"
+        
         volumes:
           - type: bind
             source: ./services/api
