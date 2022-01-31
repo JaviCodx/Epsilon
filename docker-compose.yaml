@@ -1,4 +1,4 @@
-version: '3'
+version: '3.7'
 
 services:
     mongodb:
@@ -10,7 +10,9 @@ services:
         networks: 
           - epsilon-compose-network                
     api:
-        build: ./services/api
+        build:
+          context: ./services/api
+          dockerfile: Dockerfile.dev
         depends_on:
           - mongodb
         ports:
