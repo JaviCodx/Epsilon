@@ -12,4 +12,6 @@ const ENV = {
   production: process.env.NODE_ENV === 'production',
 };
 
-export { PORT, ENV };
+const MONGO_URI =  process.env.MONGO_URI
+
+export { PORT, ENV, MONGO_URI };
