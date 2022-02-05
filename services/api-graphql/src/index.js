@@ -15,7 +15,7 @@ try {
 
   try {
     await app.listen(PORT);
-    console.log(`🚀 GraphQL server running at port: ${PORT}`);
+    console.log(`🚀 GraphQL server running at port: ${PORT} http://localhost:4000/graphql` );
   } catch {
     console.log('Not able to run GraphQL server');
   }

@@ -1,6 +1,11 @@
+import { User } from '../../../database/models';
+
 const userMutations = {
-  createAuthor: async (_, args) => {},
-  updateAuthor: async (_, args) => {},
+  createUser: async (_, {user}) => {
+    const newUser = new User(user)
+    return await newUser.save()
+  },
+  updateUser: async (_, args) => {},
 };
 
 export default userMutations;
