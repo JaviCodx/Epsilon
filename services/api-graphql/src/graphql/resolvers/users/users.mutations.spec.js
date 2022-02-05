@@ -1,5 +1,7 @@
 import userMutations from "./users.mutations"
 
+describe('userMutations', () => {
+
 
 it('creates a user with the given username', async () => {
     const user = {username: 'test'}
@@ -13,4 +15,5 @@ it('updates a user with the given username', async () => {
     const userModified = {id: createdUser.id, username: 'testModified'}
     const updatedUser = await userMutations.updateUser(null, {id :createdUser.id, user:userModified  })
     expect(updatedUser.username).toEqual(userModified.username)  
+})
 })
