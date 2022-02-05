@@ -1,12 +1,12 @@
 
-import { PORT } from './config/environment';
+import { PORT,MONGO_URI } from './config/environment';
 import app from './app';
 import connectDB from "./database"
 
 const start = async () => {
 
 try {
-  await connectDB();
+  await connectDB(MONGO_URI);
   console.log(`Connected to Mongo!`);
 } catch (error) {
   console.log(`Error with Mongo`,error);

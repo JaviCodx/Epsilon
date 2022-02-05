@@ -1,14 +1,13 @@
 import Mongoose from 'mongoose';
-import { MONGO_URI } from '../config/environment';
 
 let isConnected;
 let db;
 
-const connectDB = async () => {
+const connectDB = async (mongoUri) => {
   if (isConnected) return db;
 
   try {
-    db = await Mongoose.connect(MONGO_URI, {
+    db = await Mongoose.connect(mongoUri, {
 
     });
     isConnected = db.connections[0].readyState;

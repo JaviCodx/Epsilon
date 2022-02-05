@@ -5,7 +5,14 @@
   "main": "index.js",
   "scripts": {
     "dev": "nodemon src/index.js --exec babel-node",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest --watchAll --no-cache"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "setupFilesAfterEnv": [
+      "./src/test/setup.js"
+    ],
+    "testTimeout": 600000
   },
   "keywords": [],
   "author": "",
@@ -16,6 +23,8 @@
     "@babel/preset-env": "^7.16.11",
     "@graphql-eslint/eslint-plugin": "^3.8.0",
     "eslint": "^8.8.0",
+    "jest": "^27.5.0",
+    "mongodb-memory-server": "^8.3.0",
     "nodemon": "^2.0.15"
   },
   "dependencies": {
