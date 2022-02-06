@@ -1,14 +1,17 @@
-import { MongoMemoryServer } from 'mongodb-memory-server'
-import connectDB from "../database"
+import { MongoMemoryServer } from "mongodb-memory-server";
+import connectDB, { resetDB } from "../database";
 
-let mongo
+let mongo;
 beforeAll(async () => {
-    mongo = await MongoMemoryServer.create()
-    const mongoUri =  mongo.getUri()
-    const db = await connectDB(mongoUri)
-   
-})
+  mongo = await MongoMemoryServer.create();
+  const mongoUri = mongo.getUri();
+  const db = await connectDB(mongoUri);
+});
+
+beforeEach(async () => {
+  await resetDB();
+});
 
 afterAll(async () => {
-    await mongo.stop()
-})
+  await mongo.stop();
+});

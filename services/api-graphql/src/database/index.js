@@ -17,4 +17,13 @@ const connectDB = async (mongoUri) => {
   }
 };
 
+const resetDB = async () => {
+  const collections = await Mongoose.connection.db.collections()
+  for (const colletion of collections) {
+    await colletion.deleteMany({})
+  }
+}
+
 export default connectDB;
+
+export {resetDB}
