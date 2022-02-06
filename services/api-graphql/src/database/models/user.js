@@ -1,4 +1,5 @@
 import { Schema, model } from "mongoose";
+import bcrypt from "bcrypt";
 
 const UserSchema = new Schema(
   {
@@ -14,8 +15,15 @@ const UserSchema = new Schema(
 );
 
 UserSchema.pre("save", function (done) {
+  const user = this;
+  // if password has not been modified do nothing
+  if (!user.isModified("password")) return done();
   // hash pass with bcrypt
-  done();
+  bcrypt.hash(this.password, 12, function (err, hash) {
+    if (err) return next(err);
+    user.password = hash;
+    done();
+  });
 });
 
 UserSchema.set("toObject", { getters: true, versionKey: false });
