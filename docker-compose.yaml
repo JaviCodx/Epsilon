@@ -1,4 +1,4 @@
-version: '3'
+version: '3.7'
 
 services:
     mongodb:
@@ -10,15 +10,18 @@ services:
         networks: 
           - epsilon-compose-network                
     api:
-        build: ./services/api
+        build:
+          context: ./services/api-graphql
+          dockerfile: Dockerfile.dev
         depends_on:
           - mongodb
         ports:
-          - "3010:3010"
+          - "4000:4000"
         command: "npm run dev"
+        
         volumes:
           - type: bind
-            source: ./services/api
+            source: ./services/api-graphql
             target: /app
         working_dir: /app
         networks: 

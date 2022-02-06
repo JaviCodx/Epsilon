@@ -4,7 +4,10 @@ import { app } from './app'
 
 const start = async () => {
     try {
-        await mongoose.connect("mongodb://mongodb:27017", {})
+      if (!process.env.MONGO_URI) {
+        throw new Error('MONGO_URI must be provided in the environment')
+      }
+        await mongoose.connect(process.env.MONGO_URI, {})
         console.log('Connected to MongoDB')
       } catch (err) {
         console.log(err)
