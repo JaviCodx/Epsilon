@@ -26,6 +26,13 @@ UserSchema.pre("save", function (done) {
   });
 });
 
+UserSchema.methods.comparePassword = function (candidatePassword) {
+  bcrypt.compare(candidatePassword, this.password, function (err, isMatch) {
+    if (err) throw err;
+    return isMatch;
+  });
+};
+
 UserSchema.set("toObject", { getters: true, versionKey: false });
 UserSchema.options.toObject.transform = function (doc, ret) {
   delete ret._id;
