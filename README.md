@@ -4,7 +4,11 @@
   Registra tus entrenamientos y haz un seguimiento para conseguir tus objectivos
 </p>
 
+<<<<<<< HEAD
 ## 🔵blue_circle: ¿Qué tecnologias se usa?
+=======
+## :blue_circle: ¿Qué tecnologias se usa?
+>>>>>>> Update README.md
 
 - [ReactJS](https://reactjs.org/) + [Typescript](https://www.typescriptlang.org/)
 - [Styled-components](https://styled-components.com/)
