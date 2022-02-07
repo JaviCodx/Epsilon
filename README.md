@@ -1,24 +1,10 @@
-<<<<<<< HEAD
-# Epsilon
-
-## An app to manage your training.💻💪
-
-You will be able to control the intensity and volume of each workout
-to advance faster in your goals.
-
-1. First, choose your training type.
-
-2. Record your records and your workouts.
-
-3. And finally, schedule your next sessions.
-=======
 <h1 align="center">Epsilon</h1>
 
 <p align="center">
   Registra tus entrenamientos y haz un seguimiento para conseguir tus objectivos
 </p>
 
-## :pblue_circle: ¿Qué tecnologias se usa?
+## 🔵blue_circle: ¿Qué tecnologias se usa?
 
 - [ReactJS](https://reactjs.org/) + [Typescript](https://www.typescriptlang.org/)
 - [Styled-components](https://styled-components.com/)
@@ -65,4 +51,3 @@ npm run dev
 ```
 
 ---  
->>>>>>> main
