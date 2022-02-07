@@ -1,2 +1,68 @@
+<<<<<<< HEAD
 # Epsilon
-appgym
+
+## An app to manage your training.💻💪
+
+You will be able to control the intensity and volume of each workout
+to advance faster in your goals.
+
+1. First, choose your training type.
+
+2. Record your records and your workouts.
+
+3. And finally, schedule your next sessions.
+=======
+<h1 align="center">Epsilon</h1>
+
+<p align="center">
+  Registra tus entrenamientos y haz un seguimiento para conseguir tus objectivos
+</p>
+
+## :pblue_circle: ¿Qué tecnologias se usa?
+
+- [ReactJS](https://reactjs.org/) + [Typescript](https://www.typescriptlang.org/)
+- [Styled-components](https://styled-components.com/)
+- [react-router-dom](https://reactrouter.com/web/guides/quick-start)
+- [GraphQL](https://graphql.org/)
+- [MongoDB](https://docs.mongodb.com/)
+
+
+## :blue_square: Opciones que se han incluido
+
+- Tema Oscuro
+- Página Not Found
+
+## Requisitos
+
+- Node.js
+- NPM u otro gestor de paquetes para javascript
+
+## :heavy_check_mark: Como utilizar
+
+Clona el repositorio
+
+```bash
+git clone 
+
+Entra en la carpeta
+
+```bash
+cd Epsilon
+```
+
+Instala las dependencias
+
+```bash
+npm install
+```
+
+Crea un archivo *.env* con las variables de *.env.example*.
+
+POr último, inicia la aplicación
+
+```bash
+npm run dev
+```
+
+---  
+>>>>>>> main
