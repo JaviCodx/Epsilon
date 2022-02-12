@@ -39,4 +39,11 @@ UserSchema.options.toObject.transform = function (doc, ret) {
   return ret;
 };
 
+UserSchema.set("toJSON", { getters: true, versionKey: false });
+UserSchema.options.toObject.transform = function (doc, ret) {
+  delete ret._id;
+  delete ret.password;
+  return ret;
+};
+
 export default model("User", UserSchema);

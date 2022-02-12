@@ -12,4 +12,8 @@ const app = express();
 
 })()
 
+app.get("/health",(req,res)=>{
+    res.status(200).send("Up")
+})
+
 export default app;

@@ -2,7 +2,7 @@
 type User implements Timestamps { 
   id: ID!
   username: String!
-  password: String!
+
   # Interface required
   createdAt: Date!
   updatedAt: Date!
