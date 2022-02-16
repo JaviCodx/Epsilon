@@ -24,20 +24,21 @@ const FadeOut = keyframes`
 `;
 
 export const Container = styled.div`
-  font-weight:500;
+  font-weight:400;
+  font-size:14px;
+  font-family:'Public sans', sans-serif;
   color:${({ theme }) => theme.colors.white.light};
   min-width: 250px; 
-  
   color: #fff; 
   text-align: center; 
-  border-radius: ${({ theme }) => theme.borderRadius.md} 0 0 ${({ theme }) => theme.borderRadius.md}; /* Rounded borders */
+  border-radius: 7px;
   padding: 16px; 
   position: fixed; 
   z-index: 3; 
-  right: 0; 
-  top: 30px; 
+  right: 20px; 
+  top: 80px; 
   &.animation{
-    animation: ${FadeIn} 0.5s, ${FadeOut} .5s 1s;
+    animation: ${FadeIn} ease-in-out 0.2s, ${FadeOut} ease-in-out .2s 1s;
     animation-fill-mode: none, forwards;
   }
   

@@ -17,17 +17,12 @@ export const NotFound = () => {
 
   return (
     <Styled.Container>
-        <ToggleTheme/>
-   
-
       <Styled.Main>
         <Styled.Title>
           <h1>No se encontró la página...</h1>
         </Styled.Title>
       </Styled.Main>
-
       <Toast type="error" className="noAnimation">Vas a ser redireccionado a la home!</Toast>
-
     </Styled.Container>
   );
 };

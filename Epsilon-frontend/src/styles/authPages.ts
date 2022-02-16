@@ -11,20 +11,25 @@ export const Left = styled.div`
   flex:7;
   background-color:${({ theme }) => theme.isLight ? theme.colors.purple.light : theme.colors.purple.dark};
   display:flex;
+  text-align:left;
   flex-direction:column;
+  align-items:center;
   justify-content:center;
   padding:120px 80px;
   color:${({ theme }) => theme.colors.white.medium};
   & > img{
+    margin-bottom:60px;
     max-width:320px;
   }
   
   & > strong{
+    font-family:'Public Sans', sans-serif;
     font: 700 ${({ theme }) => theme.font.sizes.xl} ${({ theme }) => theme.font.primary};
     line-height:4.2rem;
     margin-top:1.6rem;
   }
   & > p{
+    font-family:'Public Sans', sans-serif;
     font-size: ${({ theme }) => theme.font.sizes.lg};
     line-height:${({ theme }) => theme.spacings.lg};
     margin-top:${({ theme }) => theme.spacings.md};
@@ -81,6 +86,7 @@ export const Content = styled.div`
 `;
 
 export const Separator = styled.div`
+  font-family:'Public Sans', sans-serif;
   font-size:${({ theme }) => theme.font.sizes.sm};
   color:${({ theme }) => theme.colors.gray.medium};
   margin:${({ theme }) => theme.spacings.xl} 0;
@@ -124,6 +130,7 @@ export const User = styled.div`
 `;
 
 export const LinkRoom = styled.p`
+  font-family:'Public Sans', sans-serif;
   font-size:${({ theme }) => theme.font.sizes.md};
   color:${({ theme }) => theme.isLight ? theme.colors.gray.dark : theme.colors.gray.light};
   margin-top:${({ theme }) => theme.spacings.md};

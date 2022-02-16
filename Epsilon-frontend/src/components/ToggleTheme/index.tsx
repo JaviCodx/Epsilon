@@ -1,7 +1,7 @@
 import * as Styled from './styles';
 
 import {useTheme} from '../../hooks/useTheme';
-
+import { FaToggleOn } from 'react-icons/fa'
 import { CgDarkMode } from "react-icons/cg";
 import { Toast } from '../Toast';
 import { useState } from 'react';
@@ -22,7 +22,7 @@ export const ToggleTheme = () => {
     <Styled.Container>
       {theme==="switch" && <Toast type="info">Tema cambiado: {isLight? "Claro":"Oscuro"}!</Toast>}
       <Styled.Button title="Switch Theme" onClick={handleClick} >
-        <CgDarkMode/>
+        <FaToggleOn/>
       </Styled.Button>
     </Styled.Container>
   )
