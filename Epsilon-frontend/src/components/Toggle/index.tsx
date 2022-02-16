@@ -41,7 +41,7 @@ const CheckBox = styled.input`
   background:transparent;
   margin:0;
   border:none;
-  color:${({ theme }) => theme.isLight ? theme.colors.purple.light : theme.colors.white.light};
+  color:${({ theme }:any) => theme.isLight ? theme.colors.purple.light : theme.colors.white.light};
   opacity: 0;
   z-index: 1;
   border-radius: 15px;

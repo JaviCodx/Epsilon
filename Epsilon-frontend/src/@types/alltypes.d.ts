@@ -6,3 +6,5 @@ declare module '*.jpg';
 declare module '*.svg';
 declare module '*.gif';
 declare module 'styled-components';
+declare module 'react-icons';
+

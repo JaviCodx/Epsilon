@@ -7,7 +7,7 @@ export const Button =styled.button`
   background:transparent;
   margin:0;
   border:none;
-  color:${({ theme }) => theme.isLight ? theme.colors.purple.light : theme.colors.white.light};
+  color:${({ theme }:any) => theme.isLight ? theme.colors.purple.light : theme.colors.white.light};
 `;
 
 export const Container =styled.div`

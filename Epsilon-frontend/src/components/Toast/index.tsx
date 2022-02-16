@@ -1,7 +1,6 @@
-import { ReactNode, useState } from 'react';
+import { ReactNode } from 'react';
 import * as Styled from './styles';
 import { MdInfo,MdWarning,MdError} from "react-icons/md";
-import { useTheme } from '../../hooks/useTheme';
 
 type ToastTypes = {
   children: ReactNode,
@@ -11,17 +10,7 @@ type ToastTypes = {
 
 
 export const Toast = (props: ToastTypes) => {
-
-  const { toggleTheme, isLight} = useTheme();
-  const [theme, setTheme] = useState('hidden');
-
-  const handleClick = ()=> {
-    setTheme('switch');
-    toggleTheme();
-    setTimeout(() => {
-      setTheme('hidden');
-    }, 2000);
-  }
+  
   return (
     <Styled.Container className={`${props.type} ${props.className}`}>
       <p> 

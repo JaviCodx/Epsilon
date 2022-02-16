@@ -2,7 +2,6 @@ import * as Styled from './styles';
 
 import {useTheme} from '../../hooks/useTheme';
 import { FaToggleOn } from 'react-icons/fa'
-import { CgDarkMode } from "react-icons/cg";
 import { Toast } from '../Toast';
 import { useState } from 'react';
 
