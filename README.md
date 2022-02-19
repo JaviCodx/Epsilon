@@ -1,10 +1,10 @@
 <h1 align="center">Epsilon</h1>
 
 <p align="center">
-  Registra tus entrenamientos y haz un seguimiento para conseguir tus objectivos
+  Registra tus entrenamientos y haz un seguimiento para conseguir tus objectivos.
 </p>
 
-## 🔵blue_circle: ¿Qué tecnologias se usa?
+## 🔵¿Qué tecnologias se usa?
 
 - [ReactJS](https://reactjs.org/) + [Typescript](https://www.typescriptlang.org/)
 - [Styled-components](https://styled-components.com/)
@@ -13,7 +13,7 @@
 - [MongoDB](https://docs.mongodb.com/)
 
 
-## :blue_square: Opciones que se han incluido
+## 🔵 Opciones que se han incluido
 
 - Tema Oscuro
 - Página Not Found
@@ -29,7 +29,7 @@ Clona el repositorio
 
 ```bash
 git clone 
-
+```
 Entra en la carpeta
 
 ```bash
@@ -44,7 +44,7 @@ npm install
 
 Crea un archivo *.env* con las variables de *.env.example*.
 
-POr último, inicia la aplicación
+Por último, inicia la aplicación
 
 ```bash
 npm run dev
