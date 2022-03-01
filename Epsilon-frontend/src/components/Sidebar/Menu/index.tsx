@@ -23,7 +23,7 @@ const itemsData = [
   {
     name: 'Dashboard',
     icon: <MdOutlineSpaceDashboard />,
-    link: '/'
+    link: '/dashboard'
   },
   {
     name: 'Messages',

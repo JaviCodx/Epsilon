@@ -17,9 +17,7 @@ const variables = {
 }
 
 const active = 'nav-item-active'
-const NavItem = styled(NavLink).attrs({
-  active
-})`
+const NavItem = styled(NavLink)`
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -30,18 +28,35 @@ const NavItem = styled(NavLink).attrs({
   svg {
     fill: ${variables.grayColor};
   }
-  &.${active} {
-    color: ${variables.blueColor};
-    border-left: 3px solid ${variables.blueColor};
-    svg {
-      fill: ${variables.blueColor};
-    }
+  .
+     
+    
   }
 `
 const Wrapper = styled.div`
   display: flex;
   align-items: center;
   margin-bottom: 40px;
+  a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #171725;
+    font-size: 14px;
+    letter-spacing: 0.1px;
+    border-left: 3px solid #fff;
+  }
+  svg {
+    fill: white;
+  }
+  .active {
+    color: ${variables.blueColor};
+    border-left: 3px solid ${variables.blueColor};
+    svg {
+      fill: ${variables.blueColor};
+    }
+  
+ 
 `
 const Icon = styled.div`
   margin: 0 24px;
@@ -49,7 +64,7 @@ const Icon = styled.div`
   align-items: center;
 `
 const NameLink = styled.span`
-color:${({ theme }) => theme.isLight ? theme.colors.gray.dark : theme.colors.gray.light};
+color:${({ theme }: any) => theme.isLight ? theme.colors.gray.dark : theme.colors.gray.light};
   @media (max-width: 620px) {
     display: none;
   }
@@ -66,7 +81,7 @@ const Item: React.FC<IItemProps> = props => {
 console.log(icon);
   return (
     <Wrapper>
-      <NavItem exact activeClassName={active} to={link}>
+      <NavLink to={link} className={(navData) => navData.isActive ? "active" : "" }>
       <Icon>
         {name==="Dashboard" && <MdOutlineSpaceDashboard size={"2.4rem"}/>}
         {name==="Messages" && <MdOutlineMessage size={"2.4rem"}/>}
@@ -77,7 +92,7 @@ console.log(icon);
       </Icon>
         {/* <Icon>{icon}</Icon> */}
         <NameLink>{name}</NameLink>
-      </NavItem>
+      </NavLink>
     </Wrapper>
   )
 }
