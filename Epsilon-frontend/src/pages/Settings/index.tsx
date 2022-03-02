@@ -17,7 +17,7 @@ export const Settings = () => {
   width: 100%;
 
   min-width: 250px;
-  padding: 35px;
+  padding: 37px;
   h1{
     color:white;
   }
