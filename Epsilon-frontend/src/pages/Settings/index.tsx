@@ -44,6 +44,7 @@ return (
         <Box>
             <h1>Settings</h1>
         </Box>
+        <p>Change name, username...</p>
     </Wrapper>
   </>
  
