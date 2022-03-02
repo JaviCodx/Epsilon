@@ -16,23 +16,7 @@ const variables = {
   grayColor: '#92929d'
 }
 
-const active = 'nav-item-active'
-const NavItem = styled(NavLink)`
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  color: #171725;
-  font-size: 14px;
-  letter-spacing: 0.1px;
-  border-left: 3px solid #fff;
-  svg {
-    fill: ${variables.grayColor};
-  }
-  .
-     
-    
-  }
-`
+
 const Wrapper = styled.div`
   display: flex;
   align-items: center;
@@ -44,10 +28,10 @@ const Wrapper = styled.div`
     color: #171725;
     font-size: 14px;
     letter-spacing: 0.1px;
-    border-left: 3px solid #fff;
+    border-left: 3px solid ${({ theme }: any) => theme.isLight ? theme.colors.gray.dark : theme.colors.gray.light};
   }
   svg {
-    fill: white;
+    color:${({ theme }: any) => theme.isLight ? theme.colors.gray.dark : theme.colors.gray.light};
   }
   .active {
     color: ${variables.blueColor};
