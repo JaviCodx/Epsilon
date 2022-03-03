@@ -69,7 +69,7 @@ console.log(icon);
       <Icon>
         {name==="Dashboard" && <MdOutlineSpaceDashboard size={"2.4rem"}/>}
         {name==="Messages" && <MdOutlineMessage size={"2.4rem"}/>}
-        {name==="Tasks" && <MdStickyNote2 size={"2.4rem"}/>}
+        {name==="Workouts" && <MdStickyNote2 size={"2.4rem"}/>}
         {name==="Schedule" && <MdWysiwyg size={"2.4rem"} />}
         {name==="Activity" && <MdTune size={"2.4rem"}/>}
         {name==="Settings" && <MdSettings size={"2.4rem"}/>}
