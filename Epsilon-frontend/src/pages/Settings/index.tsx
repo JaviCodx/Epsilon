@@ -8,11 +8,20 @@ import Sidebar from '../../components/Sidebar';
 import Header from '../../components/Header';
 import Content from '../../components/Main/Content'
 
-export const Dashboard = () => {
+export const Settings = () => {
 
-  const history = useNavigate();
-  
 
+  const Box = styled.div`
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+
+  min-width: 250px;
+  padding: 35px;
+  h1{
+    color:white;
+  }
+  `
 
 
 
@@ -32,7 +41,10 @@ return (
     <Header />
     <Wrapper>      
         <Sidebar />
-        <Content />
+        <Box>
+            <h1>Settings</h1>
+        </Box>
+        <p>Change name, username...</p>
     </Wrapper>
   </>
  

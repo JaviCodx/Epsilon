@@ -8,7 +8,7 @@ import Sidebar from '../../components/Sidebar';
 import Header from '../../components/Header';
 import Content from '../../components/Main/Content'
 
-export const Dashboard = () => {
+export const Schedule = () => {
 
   const history = useNavigate();
   
@@ -32,7 +32,6 @@ return (
     <Header />
     <Wrapper>      
         <Sidebar />
-        <Content />
     </Wrapper>
   </>
  

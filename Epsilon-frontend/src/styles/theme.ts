@@ -2,7 +2,7 @@ import { DefaultTheme } from 'styled-components';
 
 const styles = {
   font: {
-    primary: "'Poppins', sans-serif;",
+    primary: "'Public Sans', sans-serif;",
     secondary: "'Roboto', sans-serif;",
     sizes: {
       xsm:'1.2rem',
