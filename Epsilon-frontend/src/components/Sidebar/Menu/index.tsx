@@ -31,9 +31,9 @@ const itemsData = [
     link: '/messages'
   },
   {
-    name: 'Tasks',
+    name: 'Workouts',
     icon: <MdOutlineSpaceDashboard />,
-    link: '/tasks'
+    link: '/workouts'
   },
   {
     name: 'Schedule',

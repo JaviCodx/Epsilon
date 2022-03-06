@@ -7,4 +7,5 @@ declare module '*.svg';
 declare module '*.gif';
 declare module 'styled-components';
 declare module 'react-icons';
-
+declare module 'react-chartjs-2';
+declare module 'faker';
