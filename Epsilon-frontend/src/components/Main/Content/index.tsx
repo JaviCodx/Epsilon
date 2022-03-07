@@ -64,16 +64,21 @@ const LatestWorkouts = styled.div`
   margin-top:30px;
   height: 400px;
   padding:15px;
+  color:${({ theme }:any) => theme.isLight ? theme.colors.gray.dark : theme.colors.gray.light};
   border: 1px solid gray; 
   box-shadow: rgba(145, 158, 171, 0.2) 0px 0px 2px 0px, rgba(145, 158, 171, 0.12) 0px 12px 24px -4px;
   h2{
     font-size: 18px;
-    color:${({ theme }:any) => theme.isLight ? theme.colors.gray.dark : theme.colors.gray.light};
   }
   span{
     font-size: 15px;
     font-weight:700;
-    color:${({ theme }:any) => theme.isLight ? theme.colors.gray.dark : theme.colors.gray.light};
+  }
+  .workoutsLine{
+    margin-top:30px;
+    display:flex;
+    flex-direction:row;    
+    justify-content:space-around;
   }
 `
 const BoxWeight = styled.div`
@@ -83,6 +88,11 @@ const BoxWeight = styled.div`
   width: 49%;
   padding:15px;
   border: 1px solid gray; 
+  .center{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+  }
   h2{
     font-size: 18px;
     color:${({ theme }:any) => theme.isLight ? theme.colors.gray.dark : theme.colors.gray.light};
@@ -152,29 +162,30 @@ export const options = {
     },
   },
 };
-const labels2 = ['January', 'February', 'March', 'April', 'May', 'June', 'July'];
-export const data2 = {
-  labels2,
-  datasets: [
-    {
-      label: 'Strenght',
-      data: labels2.map(() => faker.datatype.number({ min: -1000, max: 1000 })),
-      borderColor: 'rgb(255, 99, 132)',
-      backgroundColor: 'rgba(255, 99, 132, 0.5)',
-      yAxisID: 'y',
-    },
-    {
-      label: 'Resistance',
-      data: labels2.map(() => faker.datatype.number({ min: -1000, max: 1000 })),
-      borderColor: 'rgb(53, 162, 235)',
-      backgroundColor: 'rgba(53, 162, 235, 0.5)',
-      yAxisID: 'y1',
-    },
-  ],
-};
+
+
 
 const Content = () => {
-
+  const labels2 = ['January', 'February', 'March', 'April', 'May', 'June', 'July'];
+  const data2 = {
+    labels2,
+    datasets: [
+      {
+        label: 'Strenght',
+        data: labels2.map(() => faker.datatype.number({ min: -800, max: 800 })),
+        borderColor: 'rgb(255, 99, 132)',
+        backgroundColor: 'rgba(255, 99, 132, 0.5)',
+        yAxisID: 'y',
+      },
+      {
+        label: 'Resistance',
+        data: labels2.map(() => faker.datatype.number({ min: -800, max: 800})),
+        borderColor: 'rgb(53, 162, 235)',
+        backgroundColor: 'rgba(53, 162, 235, 0.5)',
+        yAxisID: 'y1',
+      },
+    ],
+  };
   return (
     <Wrapper>
         <Welcome>
@@ -205,7 +216,9 @@ const Content = () => {
                 <h2>
                   Workout type
                 </h2>
-                <Doughnut data={data} width={300} height={240} options={{maintainAspectRatio: false,responsive:false}} />
+                <div className="center">
+                  <Doughnut data={data} width={300} height={240} options={{maintainAspectRatio: false,responsive:false}} />
+                </div>
             </BoxWeight>
             <BoxWeight>
                 <h2>
@@ -216,7 +229,20 @@ const Content = () => {
         </ContentBoxWeight>
         <LatestWorkouts>
           <h2>Latest workouts</h2>
-          <span>Monday 10:24 AM </span>
+            <div className="workoutsLine">
+              <div>
+                6  Monday, March 
+              </div>
+              <span>
+                  Total Sets 34
+              </span>
+              <span>
+                  Total Reps 121
+              </span>
+              <span>
+                  Total Volume 7.000 kg
+              </span>
+            </div>
         </LatestWorkouts>
     </Wrapper>
   )

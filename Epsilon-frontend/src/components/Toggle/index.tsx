@@ -18,7 +18,7 @@ right:45px;
 const CheckBoxLabel = styled.label`
 
   width: 42px;
-  height: 26px;
+  height: 24px;
   border-radius: 15px;
   background: #bebebe;
   cursor: pointer;

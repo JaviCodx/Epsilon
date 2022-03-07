@@ -4,6 +4,7 @@ export const Input = styled.input`
   height:50px;
   margin-top: 20px;
   border-radius: 5px;
+  margin-bottom: 10px;
   padding:0 ${({ theme }: any) => theme.spacings.md};
   background-color:${({ theme }: any) =>  theme.colors.bg.input };
   color:${({ theme }: any) => theme.colors.textColor.input};
