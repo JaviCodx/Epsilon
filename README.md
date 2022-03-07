@@ -1,5 +1,10 @@
 <h1 align="center">Epsilon</h1>
 
+## Screenshots
+
+![](screenshots/screenshot1.png)
+
+
 <p align="center">
   Registra tus entrenamientos y haz un seguimiento para conseguir tus objectivos.
 </p>
