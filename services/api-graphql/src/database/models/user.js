@@ -8,6 +8,11 @@ const UserSchema = new Schema(
       type: String,
       required: true,
     },
+    active: {
+      default:true,
+      type: Boolean,
+      required: true
+    }
   },
   {
     timestamps: true,
