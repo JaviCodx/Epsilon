@@ -1,0 +1,34 @@
+#  Last modified 2022-06-20 21:04:57.586265211
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+all:
+#  Command line target.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has not been updated.
+
+# files hash-table stats:
+# Load=4/1024=0%, Rehash=0, Collisions=0/14=0%
+# VPATH Search Paths
+
+# No 'vpath' search paths.
+
+# No general ('VPATH' variable) search path.
+
+# strcache buffers: 1 (0) / strings = 18 / storage = 174 B / avg = 9 B
+# current buf: size = 8162 B / used = 174 B / count = 18 / avg = 9 B
+
+# strcache performance: lookups = 22 / hit rate = 18%
+# hash-table stats:
+# Load=18/8192=0%, Rehash=0, Collisions=0/22=0%
+# Finished Make data base on Mon Jun 20 21:05:06 2022
+
+ 
