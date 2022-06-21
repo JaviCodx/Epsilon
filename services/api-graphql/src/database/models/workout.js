@@ -5,21 +5,25 @@ const WorkoutSchema = new Schema(
       muscularGroup: { 
         type: String, 
         required: true, 
-        unique: true 
       },
       exercise: {
         type: String,
-        required: true,
-        unique:true
+        required: true
       },
       weight: {
         type: String,
-        required: true,
         trim:true
       },
       reps: {
         type: String,
-        required: true,
+        trim:true
+      },
+      time: {
+        type: Date,
+        trim:true,
+      },
+      distance: {
+        type:String,
         trim:true
       },
       series:{

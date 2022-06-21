@@ -17,10 +17,10 @@ type Workout implements Timestamps {
 
 # Inputs
 input WorkoutCreateInput {
-  muscularGroup: String!
-  exercise: String!
-  weight: String!
-  reps: String!
+  muscularGroup: String
+  exercise: String
+  weight: String
+  reps: String
   series: String
   author: String!
 }
