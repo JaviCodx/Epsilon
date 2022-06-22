@@ -5,9 +5,20 @@ type Query {
   # User
   users: [User]!
   user(id: ID!): User
+  userCount: Int
+
+  #Workout
+  workouts: [Workout]!
+  workout(id: ID!): Workout
+  workoutsCount: Int
 }
 
 type Mutation {
+  # User
   createUser(user: UserCreateInput!): User!
   updateUser(id: ID!, user: UserUpdateInput!): User!
+
+  #Workout
+  createWorkout(workout: WorkoutCreateInput!): Workout!
+  updateWorkout(id: ID!, workout: WorkoutUpdateInput!): Workout!
 }

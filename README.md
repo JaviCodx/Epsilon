@@ -1,5 +1,10 @@
 <h1 align="center">Epsilon</h1>
 
+## Screenshots
+
+![](screenshots/screenshot1.png)
+
+
 <p align="center">
   Registra tus entrenamientos y haz un seguimiento para conseguir tus objectivos.
 </p>
@@ -23,7 +28,7 @@
 - Node.js
 - NPM u otro gestor de paquetes para javascript
 
-## :heavy_check_mark: Como utilizar
+## :heavy_check_mark: Pasos para ejecutar Epsilon
 
 Clona el repositorio
 
@@ -36,18 +41,13 @@ Entra en la carpeta
 cd Epsilon
 ```
 
-Instala las dependencias
+Ejecuta el siguiente comando que comprueba instalaciones y ejecuta el entorno de desarrollo.
 
 ```bash
-npm install
+make dev
 ```
 
-Crea un archivo *.env* con las variables de *.env.example*.
+Crea un archivo *.env* con tus variables de entorno *.env.example*.
 
-Por último, inicia la aplicación
-
-```bash
-npm run dev
-```
 
 ---  

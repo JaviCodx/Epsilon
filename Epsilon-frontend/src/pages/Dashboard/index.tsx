@@ -1,6 +1,7 @@
 
 import { Link, useNavigate } from 'react-router-dom';
 import styled from 'styled-components'
+import { Doughnut } from 'react-chartjs-2';
 import { Toast } from '../../components/Toast';
 import { Epsilon } from '../../components/Epsilon';
 import { ToggleTheme } from '../../components/ToggleTheme';

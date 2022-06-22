@@ -1,0 +1,5 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/home/kalium/Escritorio/javi/Epsilon'
+scripts/prepare.sh development
+make: Leaving directory '/home/kalium/Escritorio/javi/Epsilon'
+ 
